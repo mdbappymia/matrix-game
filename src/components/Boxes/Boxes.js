@@ -43,6 +43,16 @@ const Boxes = () => {
       box.name = `Box#${selectBox.length + 1}`;
       box.bg = "red-bg";
     }
+    if (selectBox.length >= 2) {
+      for (let box of boxes) {
+        box.bg = "green-bg";
+      }
+      selectBox[selectBox.length - 1].bg = "red-bg";
+      box.bg = "red-bg";
+      setSelectBox([...selectBox, box]);
+      console.log(selectBox);
+      return;
+    }
 
     setSelectBox([...selectBox, box]);
   };
