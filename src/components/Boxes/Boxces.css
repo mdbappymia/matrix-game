@@ -1,0 +1,14 @@
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.single-box {
+  height: 50px;
+  border: 1px solid black;
+}
+.green-bg {
+  background-color: green;
+}
+.red-bg {
+  background-color: red;
+}
